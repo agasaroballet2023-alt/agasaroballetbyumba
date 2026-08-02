@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* ✅ Base navigation styles (desktop/laptop) */
+/* ✅ Desktop/Laptop (default) */
 nav {
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,7 @@ nav {
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #fff;
 }
 
 .nav-links {
@@ -38,7 +39,15 @@ nav .logo {
   cursor: pointer;
 }
 
-/* 📱 Mobile & Tablet only (≤768px) */
+/* Close icon inside mobile menu */
+.close-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* 📱 Mobile & Tablet (≤768px) */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block; /* show hamburger */
@@ -67,6 +76,7 @@ nav .logo {
     margin: 10px 0;
   }
 }
+
 
 /* Header */
 header {
