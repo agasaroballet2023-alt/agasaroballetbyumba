@@ -366,13 +366,13 @@ nav a:hover {
 }
 
 /* Platform logos */
-.icon.youtube { background-color: #FF0000; background-image: url('images/youtube.png'); }
-.icon.facebook { background-color: #1877F2; background-image: url('images/facebook.png'); }
-.icon.whatsapp { background-color: #25D366; background-image: url('images/whatsapp.png'); }
-.icon.instagram { background-color: #E1306C; background-image: url('images/instagram.png'); }
-.icon.tiktok { background-color: #000000; background-image: url('images/tiktok.png'); }
-.icon.x { background-color: #000000; background-image: url('images/x.png'); }
-.icon.email { background-color: #D44638; background-image: url('images/email.png'); }
+.icon.youtube { background-color: #FF0000; background-image: url('youtube.png'); }
+.icon.facebook { background-color: #1877F2; background-image: url('facebook.png'); }
+.icon.whatsapp { background-color: #25D366; background-image: url('whatsapp.png'); }
+.icon.instagram { background-color: #E1306C; background-image: url('instagram.png'); }
+.icon.tiktok { background-color: #000000; background-image: url('tiktok.png'); }
+.icon.x { background-color: #000000; background-image: url('x.png'); }
+.icon.email { background-color: #D44638; background-image: url('email.png'); }
 
 /* Hover effect */
 .icon:hover {
