@@ -6,12 +6,13 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Base styles for desktop/laptop */
+/* Base styles */
 body {
-  font-size: 16px;   /* 1rem = 16px */
+  font-size: 16px;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 h1 { font-size: 2.2rem; }
@@ -19,42 +20,101 @@ h2 { font-size: 1.8rem; }
 h3 { font-size: 1.4rem; }
 p  { font-size: 1rem; }
 
-/* Make containers fluid */
 .container {
-  width: 90%;       /* flexible width */
+  width: 90%;
   margin: auto;
 }
 
-/* Images scale to screen */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Buttons/links touch-friendly */
-button, a {
-  padding: 12px 20px;
-  font-size: 1rem;
-  display: inline-block;
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
 }
 
-/* 📱 On small screens, adjust fonts & layout */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* 📱 Small phones (≤600px) */
 @media (max-width: 600px) {
-  body { font-size: 18px; }   /* bump up base size */
+  body { font-size: 18px; }
   h1 { font-size: 2.6rem; }
   h2 { font-size: 2.2rem; }
   h3 { font-size: 1.6rem; }
   p  { font-size: 1.1rem; }
 
-  .container {
-    width: 95%;   /* more breathing room */
+  .container { width: 95%; }
+}
+
+/* 📱 Larger phones & tablets (≤768px) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
   }
 
-  nav ul {
-    flex-direction: column;   /* stack menu vertically */
-    text-align: center;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+    transform: translateX(0); /* slide in */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
   }
 }
+
+/* 📱 Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  body { font-size: 16px; }
+  h1 { font-size: 2.3rem; }
+  h2 { font-size: 1.9rem; }
+  h3 { font-size: 1.4rem; }
+  p  { font-size: 1rem; }
+
+  .container { width: 90%; }
+}
+
 
 
 
