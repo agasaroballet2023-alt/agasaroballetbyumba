@@ -1,0 +1,87 @@
+/* General page style */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: red;
+  padding: 10px 20px;
+  color: white;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  display: inline-block;
+}
+nav {
+  flex: 1;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: black;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Requirements Section */
+.requirements {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border: 3px solid;
+  border-image: linear-gradient(to right, red, white, black) 1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.requirements h2 {
+  text-align: center;
+  font-size: 24px;
+  color: red;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.requirements ul {
+  list-style: none;
+  padding: 0;
+}
+.requirements ul li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-left: 6px solid red;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.requirements ul li:hover {
+  background: #ffecec;
+  transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  color: white;
+  margin-top: 40px;
+  font-size: 14px;
+}

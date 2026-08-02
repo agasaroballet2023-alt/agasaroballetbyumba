@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agasaro Ballet</title>
+  <link rel="stylesheet" href="style-home.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logo.jpg" alt="Agasaro Ballet Logo" class="logo">
+    <h1>Agasaro Ballet</h1>
+    <nav>
+      <a href="index.html">Ahabanza</a>
+      <a href="about.html">Ibisobanuro</a>
+      <a href="requirements.html">Ibisabwa</a>
+      <a href="register.html">Iyandikishe</a>
+    </nav>
+
+  </header>
+
+  <!-- Slideshow -->
+   <section class="slideshow">
+  <!-- Slides here (same as before) -->
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+    <div class="slide fade">
+      <img src="slide1.jpg" alt="Dance 1">
+      <div class="text">Traditional Rwandan Dance</div>
+    </div>
+    <div class="slide fade">
+      <img src="slide2.jpg" alt="Dance 2">
+      <div class="text">Unity Through Movement</div>
+    </div>
+    <div class="slide fade">
+      <img src="slide3.jpg" alt="Dance 3">
+      <div class="text">Cultural Preservation</div>
+    </div>
+    <div class="slide fade">
+      <img src="slide4.jpg" alt="Dance 4">
+      <div class="text">Joyful Performances</div>
+    </div>
+    <div class="slide fade">
+      <img src="slide5.jpg" alt="Dance 5">
+      <div class="text">Agasaro Ballet Spirit</div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="description">
+    <h2>Agasaro Ballet ni iki?</h2>
+    <p>Agasaro Ballet ni itsinda abana bato batorezwamo umuco nyarwanda batarama Kinyarwanda.</p>
+    <p>Twigisha abana kuva ku myaka itanu (5) kugeza kuri cumi n'itanu (15)</p>
+  </section>
+
+  <!-- Mission -->
+  <section class="mission">
+    <h2>Intego yacu</h2>
+    <ul>
+      <li>Kubungabunga no kwigisha umuco nyarwanda</li>
+      <li>Guteza imbere impano</li>
+      <li>Kubaka ikizere</li>
+      <li>Gusigasira imyitwarire iboneye n'indangagaciro nyarwanda</li>
+    </ul>
+  </section>
+  <!-- Calendar Section -->
+<div class="calendar">
+  <iframe src="https://calendar.google.com/calendar/embed?src=agasaroballet2023@gmail.com&ctz=Africa%2FKigali"
+          style="border:0" width="1200" height="400" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="page-container">
+  <div class="slideshow">
+    <!-- Slideshow content here -->
+  </div>
+
+  <div class="content-grid">
+    <div class="text-boxes">
+      <!-- Your two text boxes here -->
+    </div>
+    <div class="calendar">
+      <!-- Calendar code here -->
+    </div>
+  </div>
+</div>
+
+ <section class="work">
+  <div class="work-circle">
+    <h2>Aho twitoreza</h2>
+    <p>Gacurabwenge (Basketball court)</p>
+  </div>
+
+  <div class="work-circle">
+    <h2>Igihe dukora</h2>
+    <p>Mu biruhuko bikuru (End of Academic Year Holidays)<br>Ku wa Mbere: 9 AM – 12 PM<br>Ku wa Gatatu: 9 AM – 12 PM<br>Ku wa Gatanu: 9 AM – 12 PM</p>
+  </div>
+</section>
+<!-- Bottom Center Social Media -->
+<section class="social">
+  <h2>Follow Us</h2>
+  <div class="social-icons">
+    <ul>
+      <li><a href="https://www.youtube.com/@Agasaroballetgicumbi" target="_blank" class="icon youtube" title="Visit our YouTube channel"></a></li>
+      <li><a href="https://www.facebook.com/share/19UuoQFjLX/"_blank" class="icon facebook" title="Visit our Facebook page"></a></li>
+      <li><a href="https://wa.me/250784015547" target="_blank" class="icon whatsapp" title="Chat with us on WhatsApp"></a></li>
+      <li><a href="https://www.instagram.com/p/DbY6efEiJM9/?igsh=MTg2djE5MTY1MWVnNw==" target="_blank" class="icon instagram" title="See our Instagram posts"></a></li>
+      <li><a href="https://www.tiktok.com/@agasaro.ballet2?_r=1&_t=ZS-98RfRoWocnX" target="_blank" class="icon tiktok" title="Follow us on TikTok"></a></li>
+      <li><a href="https://x.com/i/status/1876487972151001334" target="_blank" class="icon x" title="Follow us on X"></a></li>
+      <!-- Email opens popup -->
+      <li><a href="#" class="icon email" id="emailIcon" title="Send us an Email"></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Email Popup Form -->
+<div id="emailPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Open popup
+  document.getElementById("emailIcon").addEventListener("click", function(e){
+    e.preventDefault();
+    document.getElementById("emailPopup").style.display = "block";
+  });
+
+  // Close popup
+  document.getElementById("closePopup").addEventListener("click", function(){
+    document.getElementById("emailPopup").style.display = "none";
+  });
+
+  // Close when clicking outside
+  window.addEventListener("click", function(e){
+    if(e.target == document.getElementById("emailPopup")){
+      document.getElementById("emailPopup").style.display = "none";
+    }
+  });
+
+  // Handle form submission
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Send to Google Apps Script Web App
+    fetch("https://script.google.com/macros/s/AKfycbx-ej-bBxf6UEAWkW0zlvQ5H4AW6vyvWhR-fKOH6NuklZ02hHB83ifVnCuT39_sxBa8oA/exec", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message })
+    })
+    .then(res => res.text())
+    .then(data => {
+      alert("Thank you! Your message has been sent.");
+      document.getElementById("emailPopup").style.display = "none";
+    })
+    .catch(err => alert("Error sending message: " + err));
+  });
+</script>
+
+ <a href="https://wa.me/250784015547" class="whatsapp-bubble">
+  <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+  <span class="badge">1</span>
+</a>
+
+  </div>
+</body>
+</html>
