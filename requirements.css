@@ -6,6 +6,29 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Base font size for desktops/laptops */
+body {
+  font-size: 16px;   /* 1rem = 16px */
+  line-height: 1.6;
+}
+
+/* Headings scale with rem units */
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+p  { font-size: 1rem; }
+
+/* 📱 On small screens, increase font size */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;   /* bump up base size */
+  }
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 1.6rem; }
+  p  { font-size: 1.1rem; }
+}
+
 
 /* Header */
 header {
